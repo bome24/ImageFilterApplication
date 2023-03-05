@@ -11,7 +11,8 @@ import RxSwift
 class ViewController: UIViewController {
     
     @IBOutlet weak var photoImageView: UIImageView!
-
+    @IBOutlet weak var applyButton: UIButton!
+    
     let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
@@ -28,10 +29,33 @@ class ViewController: UIViewController {
         
         photosCVC.selectedPhoto.subscribe(onNext: { [weak self] photo in
             
-            self?.photoImageView.image = photo
+            DispatchQueue.main.async {
+                self?.upateUI(with: photo)
+            }
             
         }).disposed(by: disposeBag)
         
+    }
+    
+    @IBAction func applyButtonPressed() {
+        
+        guard let sourceImage = self.photoImageView.image else {
+            return
+        }
+        
+        FilterService().applyFilter(to: sourceImage) { filteredImage in
+            
+            DispatchQueue.main.async {
+                self.photoImageView.image = filteredImage
+            }
+            
+        }
+        
+    }
+    
+    private func upateUI(with image: UIImage) {
+        self.photoImageView.image = image
+        self.applyButton.isHidden = false
     }
 
 

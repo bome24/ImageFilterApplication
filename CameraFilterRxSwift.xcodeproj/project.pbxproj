@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		240B166629B4792B001590D1 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240B166529B4792B001590D1 /* PhotoCollectionViewCell.swift */; };
+		240B166829B48823001590D1 /* FilterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240B166729B48823001590D1 /* FilterService.swift */; };
 		243BD09E29B46EA1004D1587 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243BD09D29B46EA1004D1587 /* AppDelegate.swift */; };
 		243BD0A029B46EA1004D1587 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243BD09F29B46EA1004D1587 /* SceneDelegate.swift */; };
 		243BD0A229B46EA1004D1587 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243BD0A129B46EA1004D1587 /* ViewController.swift */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		024425804ACF6519602A633E /* Pods-CameraFilterRxSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CameraFilterRxSwift.debug.xcconfig"; path = "Target Support Files/Pods-CameraFilterRxSwift/Pods-CameraFilterRxSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		240B166529B4792B001590D1 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		240B166729B48823001590D1 /* FilterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterService.swift; sourceTree = "<group>"; };
 		243BD09A29B46EA1004D1587 /* CameraFilterRxSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CameraFilterRxSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		243BD09D29B46EA1004D1587 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		243BD09F29B46EA1004D1587 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				243BD0AB29B46EA3004D1587 /* Info.plist */,
 				243BD0B129B46F8C004D1587 /* PhotosCollectionViewController.swift */,
 				240B166529B4792B001590D1 /* PhotoCollectionViewCell.swift */,
+				240B166729B48823001590D1 /* FilterService.swift */,
 			);
 			path = CameraFilterRxSwift;
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 				243BD0A229B46EA1004D1587 /* ViewController.swift in Sources */,
 				240B166629B4792B001590D1 /* PhotoCollectionViewCell.swift in Sources */,
 				243BD09E29B46EA1004D1587 /* AppDelegate.swift in Sources */,
+				240B166829B48823001590D1 /* FilterService.swift in Sources */,
 				243BD0A029B46EA1004D1587 /* SceneDelegate.swift in Sources */,
 				243BD0B229B46F8C004D1587 /* PhotosCollectionViewController.swift in Sources */,
 			);
